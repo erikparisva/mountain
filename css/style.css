@@ -1,12 +1,59 @@
+* {
+    font-family: 'Dancing Script', cursive;
+}
 :root {
     --dark-background: #bd83ce;
     --border-color: #e5b0ea;
+    --primary-color: #6597dd;
+    --light-color: rgb(240, 240, 240);
 }
 html {
     background-color: var(--dark-background);
 }
 .MainContainer {
+    position: relative;
+    margin: 0 auto;
     height: 800px;
     width: 800px;
-    border: 2px solid var(--border-color)
+    border: 2px solid var(--border-color);
+    border-radius: 3%;
+    background-color: var(--primary-color);
+    box-sizing: border-box;
+    color: var(--light-color);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+img {
+    position: absolute;
+}
+
+.mountain {
+    bottom: 20%;
+    left:10%;
+}
+.sun {
+    position: absolute;
+    top: 1%;
+    left: 9%;
+    width: 150px;
+}
+.c1 {
+    top: 13%;
+    left: 9%;
+    z-index: 2;
+}
+.c2 {
+    top: 20%;
+    left: 40%;
+}
+.c3 {
+    top: 12%;
+    left: 75%;
+}
+.text {
+    bottom: 7%;
+    text-align: center;
+    width: 100%;
+    position: absolute;
 }
